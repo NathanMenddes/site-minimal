@@ -14,7 +14,7 @@ align-items: center;
 
 
 .container{display: flex;
-    text-align:;
+    text-align:center;
     width: 850px;;
 }
 .left { background-color: #f35e35;
