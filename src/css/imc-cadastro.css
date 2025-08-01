@@ -15,15 +15,15 @@ body {
 
 .container {
   display: flex;
-  width: 850px;
-  border-radius: 12px;
+  width: 53.125rem;
+  border-radius: 0.75rem;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
   background-color: white;
 }
 
 .left, .right {
-  padding: 40px 30px;
+  padding: 2.5rem 1.875rem;
   display: flex;
   align-items: center ;
   flex-direction: column;
@@ -39,21 +39,21 @@ body {
 }
 
 .left img {
-  width: 100px;
-  margin-bottom: 20px;
+  width: 6.25rem;
+  margin-bottom: 1.25rem;
   
 }
 
 .left h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .left button {
-  margin-top: 30px;
-  padding: 12px;
-  border: 2px solid white;
-  border-radius: 8px;
+  margin-top: 1.875rem;
+  padding: 0.75rem;
+  border: 0.125rem solid white;
+  border-radius: 0.5rem;
   background-color: transparent;
   color: white;
   font-weight: bold;
@@ -73,29 +73,29 @@ body {
 }
 
 .right h1 {
-  font-size: 22px;
-  margin-bottom: 10px;
+  font-size: 1.375rem;
+  margin-bottom: 0.625rem;
 }
 
 .right p {
-  font-size: 14px;
-  margin-bottom: 25px;
+  font-size: 0.875rem;
+  margin-bottom: 1.5625rem;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 0.9375rem;
 }
 
 form input {
-  padding: 12px 15px;
+  padding: 0.75rem 0.9375rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background-color: #e57b18;
   font-weight: bold;
   color: #2f2900;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.1);
 }
 
 form input::placeholder {
@@ -103,11 +103,11 @@ form input::placeholder {
 }
 
 form button {
-  padding: 12px;
+  padding: 0.75rem;
   background-color: #2f2900;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease;
