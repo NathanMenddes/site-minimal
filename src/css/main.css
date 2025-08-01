@@ -4,7 +4,7 @@
   padding: 0;
 }
 .logo{
-  width: 15rem;
+  width: 19.8rem;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -42,7 +42,7 @@ body {
 }
 
 .left img {
-  width: 3.125rem;
+  width: 100px;
   margin-bottom: 1.25rem;
 }
 
@@ -127,3 +127,12 @@ button {
     margin-bottom: 0.625rem;
 }
 h1,p{font-family: 'poppins';}
+
+.left a {
+  color: white;
+  text-decoration: none;
+}
+
+.left a:visited {
+  color: #ccc;
+}
