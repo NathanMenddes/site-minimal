@@ -9,12 +9,12 @@
 
 .container {
     display: flex;
-    width: 1300px;
+    width: 81.25rem;
     margin-top: 1rem;   
 
 }
 
-h1 { font-size: 22px;
+h1 { font-size: 1.375rem;
 }
 
 .navegacao {
@@ -24,7 +24,7 @@ h1 { font-size: 22px;
     justify-content: space-around;
     padding: 0.5rem;
     background-color: #d77a10;
-    border-radius: 12px;
+    border-radius: 0.75rem;
 
 
 
@@ -46,7 +46,7 @@ h1 { font-size: 22px;
     background-color: white;
     width: 75rem;
     height: 38rem;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     
     & div {
         margin-bottom: 3rem;
