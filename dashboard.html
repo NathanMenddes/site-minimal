@@ -1,47 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./src/images/MINIMAL-removebg-preview.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/css/dashboard.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./src/images/MINIMAL-removebg-preview.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./src/css/dashboard.css" />
     <title>Dashboard</title>
-</head>
+  </head>
 
-<body>
-
-
+  <body>
     <div class="container">
+      <section class="navegacao">
+        <div class="perfil">
+          <h1>Perfil</h1>
+          <img src="/src/images/avatar.png" alt="Profile" />
+          <p>Avatar</p>
+          <p>seuemail@dominio.com.br</p>
+        </div>
 
+        <a href="">Dashboard</a>
+        <a href="">Histórico</a>
+        <a href="">Receitas</a>
+        <a href="">Treinos</a>
+        <a href="">Diário</a>
+        <a href="">IMC</a>
+      </section>
 
-        <section class="navegacao">
-            <div>
-                <h1>Perfil</h1>
-                <img src="/src/images/avatar.png" alt="Profile">
-                <p>Avatar</p>
-                <p>seuemail@dominio.com.br</p>
+      <section class="conteudo">
+        <div>
+          <a href="">+ Refeição</a>
+          <a href="">+ Treino</a>
+          <a href="">Calorias</a>
+        </div>
+        <div class="historico-card">
+          <h1>Histórico de Treinos</h1>
+          <div class="item">
+            <p><strong>Data:</strong> 04/08/2025</p>
+            <p><strong>Descrição:</strong> Treino de Peito</p>
+            <p><strong>Calorias Gastas:</strong> 348cal</p>
+          </div>
+          <h1>Histórico de Alimentação</h1>
+
+          <div class="item">
+            <p><strong>Data:</strong> 04/08/2025</p>
+            <p><strong>Descrição:</strong> Almoço</p>
+            <p><strong>Calorias adicionadas:</strong> 480cal</p>
+          </div>
+        </div>
+
+        <div class="consumos">
+          <div>
+            <h1>Calorias Eliminadas</h1>
+            <div class="progresso-container">
+              <div class="progresso-bar">60%</div>
             </div>
-
-            <a href="">Dashboard</a>
-            <a href="">Histórico</a>
-            <a href="">Receitas</a>
-            <a href="">Treinos</a>
-            <a href="">Diário</a>
-            <a href="">IMC</a>            
-            
-        </section>
-
-        <section class="conteudo">
-            <div id="dashboard">Visão Geral</div> 
-            <div id="receita">Suas receitas preferidas</div>
-            <div id="treino">Sua rotina de treinos</div>
-            <div id="imc">Calcule seu IMC</div>
-            <div id="historico">Seu Histórico</div>
-            <div id="diario">Suas anotações</div>
-        </section>
+            <p><i class="bi bi-person-standing"></i>--------------<i class="bi bi-person-walking"></i>-----------<i class="bi bi-person-arms-up"></i></p>
+          </div>
+          <div>
+            <h1>Calorias Consumidas</h1>
+            <div class="progresso-container">
+              <div class="progresso-bar">60%</div>
+            </div>
+            <p><i class="bi bi-droplet"></i>--------------<i class="bi bi-egg-fill"></i>-----------<i class="bi bi-egg-fried"></i></p>
+          </div>
+        </div>
+      </section>
     </div>
-</body>
-
+  </body>
 </html>
