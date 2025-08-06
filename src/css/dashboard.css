@@ -190,14 +190,8 @@ body {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
-
-.avatar-3d{
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  max-width: 400px;
-
-  .texto-sobre {
+ .texto-sobre {
+   
     position: absolute;
     top: 0;
     left: 0;
@@ -213,6 +207,30 @@ body {
     color: white;
     text-align: center;
     border-radius: 10px;
+  }
+.avatar-3d{
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(199, 194, 194, 0.4);
+  border-radius: 10px;
+
+  .texto-sobre {
+   background: transparent;
+    position: absolute;
+    top: -250px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    color: white;
+    text-align: center;
+    
   }
 
   & h2 {
