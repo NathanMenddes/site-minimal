@@ -1,15 +1,16 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
 .fade-in {
   opacity: 0;
   animation: fadeIn 0.5s ease forwards;
 }
 
-/* Animação */
 @keyframes fadeIn {
   to {
     opacity: 1;
   }
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -35,11 +36,10 @@ body {
 }
 
 .navegacao {
-  flex: px;
   min-height: 90vh;
   background-color: #d77a10;
   color: white;
-  padding: rem 1rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -65,14 +65,13 @@ body {
 }
 
 .perfil {
-  color:#2b2b2b;
+  color: #2b2b2b;
   background-color: #f7f9fc;
   margin-bottom: 1.5rem;
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   font-weight: 500;
-  
 }
 
 .navegacao a {
@@ -94,39 +93,46 @@ body {
 }
 
 .conteudo {
+  overflow-y: scroll;
+  max-height: 90vh;
   min-height: 90vh;
   flex: 1;
   display: flex;
+  flex-direction: column;
   gap: 2rem;
   background-color: white;
   border-radius: 1rem;
   padding: 2rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
+::-webkit-scrollbar{
+  width: 0px;
+}
 .conteudo > div {
   background-color: #f7f9fc;
-  margin-bottom: 1.5rem;
   padding: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   font-weight: 500;
 }
 
 .conteudo a {
-  display:flex;
-  margin-bottom: 2rem;
-  background-color: #4caf50;       
-  color: white;                    
-  padding: 12px 24px;              
-  border-radius: 8px;              
-  text-decoration: none;          
-  font-size: 16px;                
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
   font-weight: 600;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.10);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.conteudo a:hover {
+  background-color: #388e3c;
+}
 
 @media (max-width: 1024px) {
   .container {
@@ -144,4 +150,49 @@ body {
   .conteudo {
     width: 100%;
   }
+}
+
+
+busca {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.busca input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.busca button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.busca button:hover {
+  background-color: #388e3c;
+}
+
+#resultados > div {
+  background-color: #f7f9fc;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#resultados img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-top: 1rem;
 }
