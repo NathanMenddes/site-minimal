@@ -107,8 +107,7 @@ body {
 
 .conteudo h1 {
   display: flex;
-  background-color: blue;
-  flex-wrap: wrap;
+  justify-content: right;
   height: 3rem;
   border-radius: 1rem;
   width: 15rem;
@@ -126,6 +125,8 @@ body {
   display: flex;
   flex-direction: row;
   flex: 1;
+  border-left: 5px solid;
+  
 }
 
 .conteudo a {
@@ -146,10 +147,8 @@ body {
   width:9rem;
   display: flex;
   flex-direction: row;
-
-  
-
-  
+  border-right: 1px solid;
+   
 
 }
 
