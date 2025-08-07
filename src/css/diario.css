@@ -106,7 +106,7 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.10);
 }
 
-.conteudo > div {
+ .up {
   background-color: #f7f9fc;
   margin-bottom: 1.5rem;
   padding: 1.5rem;
@@ -114,11 +114,48 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
   font-weight: 500;
 }
+.down, .downDown, .downDownDown{
+  background-color: #ffffff;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.10);
+  font-weight: 500;
+  position: relative;
+}
+
+.data {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.875rem;
+  color: #666;
+  font-weight: 400;
+}
 #diario-conteudo{
   text-align: center  ;
   display: flex;
   align-items: center;
   align-content: center;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#addNoteBtn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #d77a10;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
 }
 .conteudo a {
   display:flex;
