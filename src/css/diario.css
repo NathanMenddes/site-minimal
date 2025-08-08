@@ -47,7 +47,7 @@ body {
 }
 
 .navegacao h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -125,7 +125,7 @@ body {
 }
 
 .diario-1, .diario-2, .diario-3 {
-  background-color: #ffffff;
+  background-color: #f7f9fc;
   margin-bottom: 2rem;
   border-radius: 1rem;
 }
