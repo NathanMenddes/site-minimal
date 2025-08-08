@@ -27,7 +27,6 @@ body {
   display: flex;
   align-items: flex-start;
   width: 100%;
-
   margin: auto;
   gap: 1rem; 
   padding: 1.5rem;
@@ -147,8 +146,14 @@ body {
   width:9rem;
   display: flex;
   flex-direction: row;
+  
+  
+ 
+
+}
+.semana {
   border-right: 1px solid;
-   
+
 
 }
 
@@ -163,7 +168,7 @@ body {
   .sidebar-direita {
     width: 100%;
     flex: none;
-    margin-bottom: 1rem;
+    
   }
 
   .conteudo {
@@ -171,6 +176,7 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   
 
 }
