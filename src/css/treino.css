@@ -19,7 +19,7 @@
 }
 
 .navegacao {
-  flex: px;
+  flex: 0 0 15.625rem;
   min-height: 90vh;
   background-color: #d77a10;
   color: white;
@@ -38,8 +38,8 @@
 }
 
 .navegacao img {
-  width: 100px;
-  height: 90px;
+  width: 6.25rem;
+  height: 5.625rem;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 0.5rem;
@@ -69,7 +69,7 @@
   color: #2b2b2b;
   font-weight: 500;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -114,15 +114,15 @@
     } 
 
     & > div {
-        gap: 8px;
+        gap: 0.5rem;
         
     }
 
     & p {
 
-        padding: 8px;
-        border-left: 7px solid #462e17;
-        border-radius: 15px;
+        padding: 0.5rem;
+        border-left: 0.438rem solid #462e17;
+        border-radius: 0.938rem;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         background-color: #d77a10;
         width: 10rem;

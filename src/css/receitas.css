@@ -53,8 +53,8 @@ body {
 }
 
 .navegacao img {
-  width: 100px;
-  height: 90px;
+  width: 6.25rem;
+  height: 5.625rem;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 0.5rem;
@@ -83,7 +83,7 @@ body {
   color: #2b2b2b;
   font-weight: 500;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -107,7 +107,7 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 ::-webkit-scrollbar{
-  width: 0px;
+  width: 0;
 }
 .conteudo > div {
   background-color: #f7f9fc;
@@ -122,10 +122,10 @@ body {
   margin-top: 1rem;
   background-color: #4caf50;
   color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   transition: background-color 0.3s ease, transform 0.2s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -163,9 +163,9 @@ busca {
 .busca input {
   flex: 1;
   padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
+  border: 0.063rem solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
 }
 
 .busca button {
@@ -173,8 +173,8 @@ busca {
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  font-size: 16px;
+  border-radius: 0.5rem;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -193,7 +193,7 @@ busca {
 
 #resultados img {
   width: 100%;
-  max-width: 300px;
-  border-radius: 8px;
+  max-width: 18.75rem;
+  border-radius: 0.5rem;
   margin-top: 1rem;
 }
