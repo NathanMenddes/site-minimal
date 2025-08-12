@@ -37,7 +37,7 @@ body {
 
 .navegacao {
   font-size: larger;
-  flex: 0 0 250px;
+  flex: 0 0 15.625rem;
   min-height: 90vh;
   background-color: #d77a10;
   color: white;
@@ -84,7 +84,7 @@ body {
   color: #2b2b2b;
   font-weight: 500;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   transition: background-color 0.3s, color 0.3s;
   
   .navegacao a.dashboard {
@@ -141,7 +141,7 @@ body {
 
 .data {
   text-align: right;
-  margin-right: -2px;
+  margin-right: -0.125rem;
 }
 #diario-conteudo{
   text-align: center  ;
