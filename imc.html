@@ -1,22 +1,28 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./src/images/MINIMAL-removebg-preview.png" />
-    <link rel="stylesheet" href="./src/css/receitas.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
-    <title>Receitas</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./src/css/diario.css" />
+    <title>Calculadora IMC</title>
   </head>
+
   <body class="fade-in">
     <div class="container">
       <section class="navegacao">
         <div class="perfil">
           
-          <img src="./src/images/avatar.png" alt="Profile" />
+          <img src="/src/images/avatar.png" alt="Profile" />
           <h1>Fulano da Silva</h1>
           <p>seuemail@dominio.com.br</p>
         </div>
+
        <a class="dashboard" href="./dashboard.html"><i class="bi bi-app-indicator"> </i>Dashboard</a>
         <a class="receitas" href="./receitas.html"><i class="bi bi-fork-knife"> </i>Receitas</a>
         <a class="treino" href="./treino2.html"><i class="bi bi-activity"> </i>Treinos</a>
@@ -25,18 +31,8 @@
       </section>
 
       <section class="conteudo">
-
-        <h1>Receitas</h1>
-        <div class="busca">
-          <input type="text" id="inputBusca" placeholder="Digite o nome da receita..." />
-          <button onclick="buscarReceitas()">Buscar</button>
-        </div>
-        <div id="resultados">
-          <!-- Receitas aparecerão aqui -->
-        </div>
+        
       </section>
     </div>
-
-    <script src="./src/js/receitas.js"></script>
   </body>
 </html>

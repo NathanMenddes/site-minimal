@@ -109,6 +109,9 @@ body {
 }
 
 .conteudo {
+  overflow-y: scroll;
+  max-height: 90vh;
+  min-height: 90vh;
   min-height: 92vh;
   flex: 1;
   display: flex;
@@ -118,6 +121,10 @@ body {
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.10);
+}
+
+::-webkit-scrollbar{
+  width: 0px;
 }
 
 .conteudo > div {
@@ -208,4 +215,142 @@ body {
   .conteudo {
     width: 100%;
   }
+}
+
+#chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#chat-box {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background: #f7f9fc;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mensagem {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.usuario {
+  background: #d77a10;
+  color: white;
+  align-self: flex-end;
+}
+
+.brocolito {
+  background: #4caf50;
+  color: white;
+  align-self: flex-start;
+}
+
+#input-area {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#user-input {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+#send-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+#send-btn:hover {
+  background: #388e3c;
+}
+
+#input-area {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#user-input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+#send-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+#send-btn:hover {
+  background: #388e3c;
+}
+
+#chat-container {
+  display: none; /* começa escondido até salvar a key */
+  flex-direction: column;
+  height: 100%;
+}
+
+#chat-box {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background: #f7f9fc;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mensagem {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.usuario {
+  background: #d77a10;
+  color: white;
+  align-self: flex-end;
+}
+
+.brocolito {
+  background: #4caf50;
+  color: white;
+  align-self: flex-start;
+}
+
+#input-area {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#user-input {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+#send-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+#send-btn:hover {
+  background: #388e3c;
 }
