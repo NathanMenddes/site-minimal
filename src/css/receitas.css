@@ -38,7 +38,7 @@ body {
 
 .navegacao {
   font-size: larger;
-  flex: 0 0 250px;
+  flex: 0 0 15.625rem;
   min-height: 90vh;
   background-color: #d77a10;
   color: white;
@@ -75,6 +75,10 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   font-weight: 500;
 }
+.perfil #logout {
+  color: red;
+}
+
 
 .navegacao a {
   font-size: larger;
@@ -164,7 +168,7 @@ busca {
 .busca input {
   flex: 1;
   padding: 0.8rem;
-  border: 0.063rem solid #ccc;
+  border: 0.0625rem solid #ccc;
   border-radius: 0.5rem;
   font-size: 1rem;
 }

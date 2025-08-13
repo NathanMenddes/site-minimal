@@ -1,81 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./src/images/MINIMAL-removebg-preview.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./src/css/treino2.css" />
-    <title>Treino</title>
-  </head>
 
-  <body class="fade-in">
-    <div class="container">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./src/images/MINIMAL-removebg-preview.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./src/css/treino2.css" />
+  <title>Treino</title>
+</head>
+
+<body class="fade-in">
+  <div class="container">
       <section class="navegacao">
         <div class="perfil">
-          
           <img src="/src/images/avatar.png" alt="Profile" />
+          <i class="bi bi-gear"></i>
+          <i class="bi bi-bell"></i>
+          <i id="logout" class="bi bi-box-arrow-in-right"></i>
           <h1>Fulano da Silva</h1>
           <p>seuemail@dominio.com.br</p>
         </div>
 
-        <a href="./dashboard.html">Dashboard</a>
-        <a href="./receitas.html">Receitas</a>
-        <a href="./treino2.html">Treinos</a>
-        <a href="./diario.html">Diário</a>
-        <a href="./">IMC</a>
+        <a class="dashboard" href="./dashboard.html"><i class="bi bi-app-indicator"> </i>Dashboard</a>
+        <a class="receitas" href="./receitas.html"><i class="bi bi-fork-knife"> </i>Receitas</a>
+        <a class="treino" href="./treino2.html"><i class="bi bi-activity"> </i>Treinos</a>
+        <a class="diario" href="./diario.html"><i class="bi bi-book"> </i>Diário</a>
+        <a class="imc" href="./imc.html"><i class="bi bi-clipboard-data"> </i>IMC</a>
       </section>
+    <section class="conteudo">
+      <h1 id="treino-conteudo">Treino Semanal</h1>
+      <div>
 
-      <section class="conteudo">
-                <h1 id="treino-conteudo">Treino Semanal</h1>
-        <div>
-            
-            <div class="semana">
-                <p>Segunda <input type="checkbox" name="checkbox" id=""></p>
-                <input type="text" id="taskInput" placeholder="Adicionar treino">
-                <button id="addTaskBtn">Adicionar</button>
-            </div>
-            
-            <div class="semana">
-                <p>Terça <input type="checkbox" name="checkbox" id=""></p>
-                <input type="text" id="taskInput" placeholder="Adicionar treino">
-                <button id="addTaskBtn">Adicionar</button>
-            </div>
-           
-            <div class="semana">
-                 <p>Quarta <input type="checkbox" name="checkbox" id=""></p>
-                <input type="text" id="taskInput" placeholder="Adicionar treino">
-                <button id="addTaskBtn">Adicionar</button>
-            </div>
-            
-            <div class="semana">
-                <p>Quinta <input type="checkbox" name="checkbox" id=""></p>
-                <input type="text" id="taskInput" placeholder="Adicionar treino">
-                <button id="addTaskBtn">Adicionar</button>
-            </div>
-            
-            <div class="semana">
-                <p>Sexta <input type="checkbox" name="checkbox" id=""></p>
-                <input type="text" id="taskInput" placeholder="Aicionar treino">
-                <button id="addTaskBtn">Adicionar</button>
-            </div>
-            
-            <div class="semana">
-                <p>Sábado <input type="checkbox" name="checkbox" id=""></p>
-                <input type="text" id="taskInput" placeholder="Aicionar treino">
-                <button id="addTaskBtn">Adicionar</button>
-            </div>
-            
-            
+        <div class="semana">
+          <p>Segunda <input type="checkbox" name="checkbox" id=""></p>
+          <input type="text" id="taskInput" placeholder="Adicionar treino">
+          <button id="addTaskBtn">Adicionar</button>
+
+          <li>Supino reto com barra 4x8</li>
+          <li>Supino inclinado com halteres 3x10</li>
+          <li>Crossover no cabo 3x12</li>
+          <li>Tríceps testa 3x10</li>
+          <li>Tríceps corda no pulley 3x12</li>
+          <li>Mergulho entre bancos 3x15</li>
 
         </div>
 
-        
-      </section>
-    </div>
-  </body>
+        <div class="semana">
+          <p>Terça <input type="checkbox" name="checkbox" id=""></p>
+          <input type="text" id="taskInput" placeholder="Adicionar treino">
+          <button id="addTaskBtn">Adicionar</button>
+
+          <li>Puxada na frente 4x10</li>
+          <li>Remada curvada com barra 3x8</li>
+          <li>Remada baixa no cabo 3x12</li>
+          <li>Rosca direta com barra 3x10</li>
+          <li>Rosca alternada com halteres 3x12</li>
+          <li>Rosca martelo 3x12</li>
+
+
+        </div>
+
+        <div class="semana">
+          <p>Quarta <input type="checkbox" name="checkbox" id=""></p>
+          <input type="text" id="taskInput" placeholder="Adicionar treino">
+          <button id="addTaskBtn">Adicionar</button>
+          <li>Leg press 4x12</li>
+          <li>Cadeira extensora 3x12</li>
+          <li>Cadeira flexora 3x12</li>
+          <li>Panturrilha em pé 3x20</li>
+          <li>Prancha 3x 1min</li>
+          <li>Elevação de pernas 3x15</li>
+        </div>
+
+
+        <div class="semana">
+          <p>Quinta <input type="checkbox" name="checkbox" id=""></p>
+          <input type="text" id="taskInput" placeholder="Adicionar treino">
+          <button id="addTaskBtn">Adicionar</button>
+          <li>Puxada na frente 4x10</li>
+          <li>Desenvolvimento com halteres 4x10</li>
+          <li>Elevação lateral 3x12</li>
+          <li>Elevação frontal 3x12</li>
+          <li>Encolhimento com barra 4x15</li>
+          <li>Remada alta 3x12</li>
+        </div>
+
+        <div class="semana">
+          <p>Sexta <input type="checkbox" name="checkbox" id=""></p>
+          <input type="text" id="taskInput" placeholder="Aicionar treino">
+          <button id="addTaskBtn">Adicionar</button>
+          <li>Crucifixo reto 4x12</li>
+          <li>Supino declinado 3x10</li>
+          <li>Flexão com peso 3x15</li>
+          <li>Remada unilateral com halteres 3x12</li>
+          <li>Pull-over 3x10</li>
+          <li>Puxada aberta na frente 3x12</li>
+        </div>
+
+        <div class="semana">
+          <p>Sábado <input type="checkbox" name="checkbox" id=""></p>
+          <input type="text" id="taskInput" placeholder="Aicionar treino">
+          <button id="addTaskBtn">Adicionar</button>
+          <li>Stiff com halteres 4x10</li>
+          <li>Mesa flexora 3x12</li>
+          <li>Glúteo no cabo 3x15 (cada perna)</li>
+          <li>Abdominal com anilha 3x15</li>
+          <li>Prancha com elevação de pernas 3x30 seg</li>
+          <li>Abdominal bicicleta 3x20</li>
+
+
+        </div>
+
+
+
+      </div>
+
+
+    </section>
+  </div>
+  <script src="src/treino.js"></script>
+</body>
+
 </html>

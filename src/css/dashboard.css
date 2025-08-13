@@ -27,7 +27,6 @@ body {
   display: flex;
   align-items: flex-start;
   width: 100%;
-
   margin: auto;
   gap: 1rem; 
   padding: 1.5rem;
@@ -36,7 +35,7 @@ body {
 
 .navegacao {
   font-size: larger;
-  flex: 0 0 250px;
+  flex: 0 0 15.625rem;
   min-height: 90vh;
   background-color: #d77a10;
   color: white;
@@ -89,6 +88,9 @@ body {
   .navegacao a.dashboard {
   color: #f7f9fc;
  }
+}
+.perfil #logout {
+  color: red;
 }
 
 .navegacao a:hover,
@@ -242,7 +244,7 @@ body {
   width: 100%;
   max-width: 25rem;
   background-color:(199, 194, 194, 0.4);
-  border-radius: 10px;
+  border-radius: 0.625rem;
 
   .texto-sobre {
    background: transparent;
@@ -282,7 +284,7 @@ body {
   align-items: center;
   & img {
     background-color: #ffffff;
-    height: 90px;
+    height: 5.625rem;
     border-radius: 50%;
     border-style:solid;
     object-fit: cover;
