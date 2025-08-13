@@ -27,7 +27,6 @@ body {
   display: flex;
   align-items: flex-start;
   width: 100%;
-
   margin: auto;
   gap: 1rem; 
   padding: 1.5rem;
@@ -89,6 +88,9 @@ body {
   .navegacao a.dashboard {
   color: #f7f9fc;
  }
+}
+.perfil #logout {
+  color: red;
 }
 
 .navegacao a:hover,

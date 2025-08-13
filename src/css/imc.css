@@ -74,6 +74,10 @@ body {
   font-weight: 500;
   
 }
+.perfil #logout {
+  color: red;
+}
+
 
 .navegacao a {
   font-size: larger;
