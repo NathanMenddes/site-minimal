@@ -86,7 +86,7 @@ function appendMessage(sender, text) {
   const div = document.createElement("div");
   div.className = `mensagem ${sender}`;
   div.innerHTML = `<strong>${
-    sender === "usuario" ? "Você" : "Brocolito"
+    sender === "usuario" ? "Você" : "Brócolito"
   }:</strong> ${text}`;
   chatBox.appendChild(div);
   chatBox.scrollTop = chatBox.scrollHeight;
@@ -99,7 +99,7 @@ async function enviarMensagem() {
   appendMessage("usuario", text);
   userInput.value = "";
 
-  appendMessage("brocolito", "⏳ Pensando...");
+  appendMessage("brocolito", "⏳ Digitando...");
   const loadingElem = chatBox.lastChild;
 
   try {

@@ -143,21 +143,9 @@ body {
   color: #462e17;
 }
 
-<<<<<<< HEAD
 .campo {
   margin-bottom: 1rem;
   text-align: left;
-=======
-.data {
-  text-align: right;
-  margin-right: -0.125rem;
-}
-#diario-conteudo{
-  text-align: center  ;
-  display: flex;
-  align-items: center;
-  align-content: center;
->>>>>>> e6e80f641d1c0a8e8db3e4666368ff719a839c71
 }
 
 .campo label {
@@ -241,4 +229,3 @@ body {
 .chat-link:hover {
   background:#388e3c;
 }
-

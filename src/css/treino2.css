@@ -35,7 +35,7 @@ body {
 
 .navegacao {
   font-size: larger;
-  flex: 0.0625rem;
+  flex: 0 0 15.625rem;
   min-height: 90vh;
   background-color: #d77a10;
   color: white;

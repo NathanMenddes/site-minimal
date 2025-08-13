@@ -36,7 +36,7 @@ document.getElementById('formIMC').addEventListener('submit', function (e) {
       Seu IMC é <strong>${imc.toFixed(2)}</strong> (${classificacao})<br>
       <small>${dica}</small><br>
       <a href="./chat-gpt.html" target="_blank" class="chat-link">
-        <i class="bi bi-chat-dots"> </i> Dicas com o Brocolito 🥦
+        <i class="bi bi-chat-dots"> </i> Dicas com o Brócolito 🥦
       </a>
     `;
   } else {
