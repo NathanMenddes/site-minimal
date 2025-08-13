@@ -26,30 +26,71 @@
           <p>seuemail@dominio.com.br</p>
         </div>
 
-        <a class="dashboard" href="./dashboard.html"><i class="bi bi-app-indicator"> </i>Dashboard</a>
-        <a class="receitas" href="./receitas.html"><i class="bi bi-fork-knife"> </i>Receitas</a>
-        <a class="treino" href="./treino2.html"><i class="bi bi-activity"> </i>Treinos</a>
-        <a class="diario" href="./diario.html"><i class="bi bi-book"> </i>Diário</a>
-        <a class="imc" href="./imc.html"><i class="bi bi-clipboard-data"> </i>IMC</a>
+        <a class="dashboard" href="./dashboard.html"
+          ><i class="bi bi-app-indicator"> </i>Dashboard</a
+        >
+        <a class="receitas" href="./receitas.html"
+          ><i class="bi bi-fork-knife"> </i>Receitas</a
+        >
+        <a class="treino" href="./treino2.html"
+          ><i class="bi bi-activity"> </i>Treinos</a
+        >
+        <a class="diario" href="./diario.html"
+          ><i class="bi bi-book"> </i>Diário</a
+        >
+        <a class="imc" href="./imc.html"
+          ><i class="bi bi-clipboard-data"> </i>IMC</a
+        >
       </section>
 
       <!-- Conteúdo principal -->
       <section class="conteudo">
-        <!-- Área de inserção da chave -->
-        <div id="key-area">
-          <input type="password" id="api-key" placeholder="Digite sua API Key do Gemini" />
-          <button id="save-key">Salvar Key</button>
-          <button id="clear-key">Limpar Key</button>
-          <p id="key-status"></p>
+        <div>
+          <h1>Chat</h1>
+          <p>
+            Conheça o Brócolito 🥦, seu parceiro virtual na jornada fitness!
+            Sempre pronto para ajudar, o Brócolito responde às suas dúvidas
+            sobre alimentação saudável, treinos e hábitos que vão turbinar seus
+            resultados. Seja para entender qual exercício é mais indicado,
+            montar um plano de refeições ou descobrir dicas para manter a
+            motivação, ele está aqui para conversar com você a qualquer hora. 💪
+            Fale com o Brócolito e leve seu estilo de vida saudável para o
+            próximo nível!
+          </p>
         </div>
 
         <!-- Área do chat -->
         <div id="chat-container">
+          <div class="avatar-ia">
+            <img
+              src="./src/images/Captura_de_tela_de_2025-08-11_23-14-01-removebg-preview.png"
+              alt=""
+            />
+            <div>
+              <h1>Brocolito 🦾🥦</h1>
+              <p>Online</p>
+            </div>
+          </div>
           <div id="chat-box"></div>
           <div id="input-area">
-            <input type="text" id="user-input" placeholder="Pergunte algo sobre vida fitness..." />
+            <input
+              type="text"
+              id="user-input"
+              placeholder="Pergunte algo sobre vida fitness..."
+            />
             <button id="send-btn">Enviar</button>
           </div>
+        </div>
+
+        <div id="key-area">
+          <input
+            type="password"
+            id="api-key"
+            placeholder="Digite sua API Key do Gemini"
+          />
+          <button id="save-key">Salvar Key</button>
+          <button id="clear-key">Limpar Key</button>
+          <p id="key-status"></p>
         </div>
       </section>
     </div>

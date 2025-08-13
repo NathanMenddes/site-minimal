@@ -35,19 +35,40 @@ async function callGemini(userMessage) {
   const apiKey = getStoredKey();
   if (!apiKey) throw new Error("API Key não encontrada.");
 
-  const url = `${BASE_URL}/models/${MODEL}:generateContent?key=${encodeURIComponent(apiKey)}`;
+  const url = `${BASE_URL}/models/${MODEL}:generateContent?key=${encodeURIComponent(
+    apiKey
+  )}`;
 
   const body = {
-    contents: [{
-      role: "user",
-      parts: [{ text: `Você é o Brocolito, especialista em vida fitness. Responda: ${userMessage}` }]
-    }]
+    contents: [
+      {
+        role: "user",
+        parts: [
+          {
+            text: `Você é o Brócolito, um especialista em vida fitness.
+Responda sempre com uma única string formatada somente com HTML válido.
+Utilize as seguintes tags para estruturar a resposta:
+
+<p> para separar parágrafos
+
+<ul> e <li> para criar listas com espaçamento claro entre os itens
+
+<strong> para destacar palavras ou frases importantes
+
+Não use markdown, blocos de código ou mencione a palavra "html" em nenhum momento.
+
+Estruture a resposta em blocos bem definidos e com espaçamentos visuais entre eles.
+Cada seção deve ser separada visualmente com margem (ex: <p style="margin-bottom: 16px;">) para facilitar a leitura.  : ${userMessage}`,
+          },
+        ],
+      },
+    ],
   };
 
   const resp = await fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(body)
+    body: JSON.stringify(body),
   });
 
   if (!resp.ok) {
@@ -55,13 +76,18 @@ async function callGemini(userMessage) {
   }
 
   const data = await resp.json();
-  return data.candidates?.[0]?.content?.parts?.[0]?.text || "Não consegui responder 😅";
+  return (
+    data.candidates?.[0]?.content?.parts?.[0]?.text ||
+    "Não consegui responder 😅"
+  );
 }
 
 function appendMessage(sender, text) {
   const div = document.createElement("div");
   div.className = `mensagem ${sender}`;
-  div.innerHTML = `<strong>${sender === "usuario" ? "Você" : "Brocolito"}:</strong> ${text}`;
+  div.innerHTML = `<strong>${
+    sender === "usuario" ? "Você" : "Brocolito"
+  }:</strong> ${text}`;
   chatBox.appendChild(div);
   chatBox.scrollTop = chatBox.scrollHeight;
 }
@@ -97,7 +123,7 @@ clearKeyBtn.addEventListener("click", () => {
   updateKeyUI();
 });
 sendBtn.addEventListener("click", enviarMensagem);
-userInput.addEventListener("keypress", e => {
+userInput.addEventListener("keypress", (e) => {
   if (e.key === "Enter") enviarMensagem();
 });
 

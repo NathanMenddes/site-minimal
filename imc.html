@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -8,8 +8,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./src/css/diario.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/imc.css" />
     <title>Calculadora IMC</title>
   </head>
 
@@ -17,22 +20,70 @@
     <div class="container">
       <section class="navegacao">
         <div class="perfil">
-          
           <img src="/src/images/avatar.png" alt="Profile" />
           <h1>Fulano da Silva</h1>
           <p>seuemail@dominio.com.br</p>
         </div>
 
-       <a class="dashboard" href="./dashboard.html"><i class="bi bi-app-indicator"> </i>Dashboard</a>
-        <a class="receitas" href="./receitas.html"><i class="bi bi-fork-knife"> </i>Receitas</a>
-        <a class="treino" href="./treino2.html"><i class="bi bi-activity"> </i>Treinos</a>
-        <a class="diario" href="./diario.html"><i class="bi bi-book"> </i>Diário</a>
-        <a class="imc" href="./imc.html"><i class="bi bi-clipboard-data"> </i>IMC</a>
+        <a class="dashboard" href="./dashboard.html"
+          ><i class="bi bi-app-indicator"> </i>Dashboard</a
+        >
+        <a class="receitas" href="./receitas.html"
+          ><i class="bi bi-fork-knife"> </i>Receitas</a
+        >
+        <a class="treino" href="./treino2.html"
+          ><i class="bi bi-activity"> </i>Treinos</a
+        >
+        <a class="diario" href="./diario.html"
+          ><i class="bi bi-book"> </i>Diário</a
+        >
+        <a class="imc" href="./imc.html"
+          ><i class="bi bi-clipboard-data"> </i>IMC</a
+        >
       </section>
 
       <section class="conteudo">
-        
+        <div>
+          <h1>Calculadora de IMC</h1>
+          <p>Descubra seu Índice de Massa Corporal (IMC) inserindo seu peso e altura. O cálculo é feito dividindo o peso pela altura ao quadrado, ajudando a identificar se você está abaixo, dentro ou acima do peso ideal para sua saúde.</p>
+        </div>
+        <div class="calculadora-imc">
+           
+          <form id="formIMC">
+            <div class="campo">
+              <label for="peso">Peso (kg)</label>
+              <input
+                type="number"
+                id="peso"
+                name="peso"
+                step="0.1"
+                placeholder="Ex: 70"
+                required
+              />
+            </div>
+
+            <div class="campo">
+              <label for="altura">Altura (m)</label>
+              <input
+                type="number"
+                id="altura"
+                name="altura"
+                step="0.01"
+                placeholder="Ex: 1.75"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn-calcular">
+              <i class="bi bi-calculator"></i> Calcular IMC
+            </button>
+          </form>
+
+          <div id="resultado" class="resultado"></div>
+        </div>
       </section>
+
+      <script src="./src/js/imc.js"></script>
     </div>
   </body>
 </html>
